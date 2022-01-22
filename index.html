@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouShare - File Sharing App</title>
+    <link rel="icon" href="./assets/fileicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="upload-container">
+        <div class="drop-zone">
+            <div class="icon-container">
+                <img src="./assets/fileicon.png" class="center" draggable="false">
+            </div>
+            <input type="file" id="fileInput">
+            <div class="title">
+                Drop Your Files Here or, 
+                <span class="browsebtn">
+                    Browse
+                </span>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="bg-progress">
+            </div>
+        </div>
+        <div class="sharing-container">
+            <p class="expire">Link expires in 24 hours</p>
+            <div class="input-container">
+                <input type="text" id="fileUrl" readonly value="">
+                <img class="copy-link" src="./assets/content_copy_black_24dp.svg" alt="copy" draggable="false">
+            </div>
+        </div>
+    </section>
+    <div class="toast">
+        copied to 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
