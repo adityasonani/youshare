@@ -45,7 +45,7 @@ copyLink.addEventListener("click", ()=>{
 const uploadFile = ()=>{
     if (fileInput.files.length > 1) {
         fileInput.value = "";
-        showToast("Please upload 1 file at a time");
+        showToast("Please upload 1 file at a time.");
         return;
     }
     const file = fileInput.files[0];
