@@ -8,7 +8,7 @@ const sharingContainer = document.querySelector(".sharing-container");
 const copyLink = document.querySelector(".copy-link");
 const toast = document.querySelector(".toast");
 
-const host = "https://innshare.herokuapp.com/";
+const host = "https://youshare.herokuapp.com/";
 const uploadUrl = host + "api/files";
 
 const MAX_ALLOWED_SIZE = 100 * 1024 * 1024; //100MB
