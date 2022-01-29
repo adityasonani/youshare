@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- new push -->
     <section class="upload-container">
-        <div class="drop-zone">
-            <div class="icon-container">
-                <img src="./assets/fileicon.png" class="center" draggable="false">
+        <form action="">
+            <div class="drop-zone">
+                <div class="icon-container">
+                    <img src="./assets/fileicon.png" class="center" draggable="false">
+                </div>
+                <input type="file" id="fileInput">
+                <div class="title">
+                    Drop Your Files Here or, 
+                    <span class="browsebtn">
+                        Browse
+                    </span>
+                </div>
             </div>
-            <input type="file" id="fileInput">
-            <div class="title">
-                Drop Your Files Here or, 
-                <span class="browsebtn">
-                    Browse
-                </span>
-            </div>
-        </div>
+        </form>
         <div class="progress-container">
             <div class="bg-progress">
             </div>
@@ -35,7 +38,6 @@
         </div>
     </section>
     <div class="toast">
-        copied to 
     </div>
     <script src="index.js"></script>
 </body>
