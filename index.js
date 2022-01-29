@@ -132,10 +132,10 @@ let toastTime;
 const showToast = (msg)=>{
     clearTimeout(toastTime);
     toast.innerText = msg;
-    toast.classList.add("show");
-    // toast.style.transform = "translate(-50%, 0)";
+    // toast.classList.add("show");
+    toast.style.transform = "translate(-50%, 0)";
     toastTime = setTimeout(()=>{
-        // toast.style.transform = "translate(-50%, 60px)";
-        toast.classList.remove("show");
+        toast.style.transform = "translate(-50%, 60px)";
+        // toast.classList.remove("show");
     }, 2000);
 };
